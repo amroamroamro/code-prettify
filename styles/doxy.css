@@ -22,6 +22,7 @@ pre.prettyprint, code.prettyprint {
   font-weight: bold;
   font-size: 9pt;
   background-color: #0f0f0f;
+  color: #f0f0f0;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
