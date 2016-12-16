@@ -7,30 +7,62 @@
  */
 
 /* highlight Normal guifg=White guibg=Grey20 */
-pre.prettyprint { background-color: #333; color: #fff; }
-pre .nocode { color: #fff; }
-/* highlight Constant guifg=#ffa0a0 */
-pre .str { color: #ffa0a0; }
-/* highlight Statement guifg=Khaki gui=bold */
-pre .kwd { color: #f0e68c; font-weight: bold; }
+pre.prettyprint {
+  color: #fff;
+  background-color: #333;
+}
+pre .pln,
+pre .nocode {
+  color: #fff;
+}
 /* highlight Comment guifg=SkyBlue */
-pre .com { color: #87ceeb; }
-/* highlight Type guifg=DarkKhaki gui=bold */
-pre .typ { color: #bdb76b; /* font-weight: bold; */ }
-pre .lit { color: #ffa0a0; }
-/* highlight Special guifg=NavajoWhite */
-pre .pun { color: #fff; }
-pre .opn, pre .clo { color: #ffdead; }
-pre .pln { color: #fff; }
-pre .tag { color: #f0e68c; font-weight: bold; }
-pre .atn { color: #bdb76b; font-weight: bold; }
-pre .atv { color: #ffa0a0; }
-/* highlight PreProc guifg=IndianRed */
-pre .dec { color: #cd5c5c; }
+pre .com {
+  color: #87ceeb;
+}
+/* highlight Constant guifg=#ffa0a0 */
+pre .str,
+pre .lit,
+pre .atv {
+  color: #ffa0a0;
+}
 /* highlight Identifier guifg=PaleGreen */
-pre .var { color: #98fb98; }
-pre .fun { color: #98fb98; }
+pre .var,
+pre .fun {
+  color: #98fb98;
+}
+/* highlight Statement guifg=Khaki gui=bold */
+pre .kwd,
+pre .tag {
+  color: #f0e68c;
+  font-weight: bold;
+}
+/* highlight PreProc guifg=IndianRed */
+pre .dec {
+  color: #cd5c5c;
+}
+/* highlight Type guifg=DarkKhaki gui=bold */
+pre .typ {
+  color: #bdb76b;
+  /* font-weight: bold; */
+}
+pre .atn {
+  color: #bdb76b;
+  font-weight: bold;
+}
+/* highlight Special guifg=NavajoWhite */
+pre .pun {
+  color: #fff;
+}
+pre .opn,
+pre .clo {
+  color: #ffdead;
+}
 /* highlight Underlined gui=underline guifg=#80a0ff */
-.prettyprint a { color: #80a0ff; text-decoration: underline; }
+.prettyprint a {
+  color: #80a0ff;
+  text-decoration: underline;
+}
 /* highlight LineNr guifg=Yellow */
-ol.linenums { color: #ff0; }
+ol.linenums {
+  color: #ff0;
+}
