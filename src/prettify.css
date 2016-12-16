@@ -19,21 +19,20 @@
 
 
 /* SPAN elements with the classes below are added by prettyprint. */
-.pln { color: #000 }  /* plain text */
+.pln { color: #000 }               /* plain text */
 
 @media screen {
-  .str { color: #080 }  /* string content */
-  .kwd { color: #008 }  /* a keyword */
-  .com { color: #800 }  /* a comment */
-  .typ { color: #606 }  /* a type name */
-  .lit { color: #066 }  /* a literal value */
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { color: #660 }
-  .tag { color: #008 }  /* a markup tag name */
-  .atn { color: #606 }  /* a markup attribute name */
-  .atv { color: #080 }  /* a markup attribute value */
-  .dec, .var { color: #606 }  /* a declaration; a variable name */
-  .fun { color: red }  /* a function name */
+  .str { color: #080 }             /* string content */
+  .kwd { color: #008 }             /* keyword */
+  .com { color: #800 }             /* comment */
+  .typ { color: #606 }             /* type name */
+  .lit { color: #066 }             /* literal value */
+  .pun, .opn, .clo { color: #660 } /* punctuation, lisp open/close brackets */
+  .tag { color: #008 }             /* markup tag name */
+  .atn { color: #606 }             /* markup attribute name */
+  .atv { color: #080 }             /* markup attribute value */
+  .dec, .var { color: #606 }       /* declaration, variable name */
+  .fun { color: #f00 }             /* function name */
 }
 
 /* Use higher contrast and text-weight for printable form. */
@@ -47,13 +46,17 @@
   .tag { color: #006; font-weight: bold }
   .atn { color: #404 }
   .atv { color: #060 }
+  .dec, .var { color: #404 }
+  .fun { color: #d00 }
 }
 
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint { padding: 2px; border: 1px solid #888 }
 
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+/* (IE indents via margin-left) */
+ol.linenums { margin-top: 0; margin-bottom: 0 }
+/* Only show line numbers at intervals of 5 (i.e  5,10,15,...) */
 li.L0,
 li.L1,
 li.L2,
