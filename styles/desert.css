@@ -6,63 +6,65 @@
  * @see http://www.vim.org/scripts/script.php?script_id=105
  */
 
-/* highlight Normal guifg=White guibg=Grey20 */
-pre.prettyprint {
-  color: #fff;
-  background-color: #333;
-}
-pre .pln,
-pre .nocode {
-  color: #fff;
-}
-/* highlight Comment guifg=SkyBlue */
-pre .com {
-  color: #87ceeb;
-}
-/* highlight Constant guifg=#ffa0a0 */
-pre .str,
-pre .lit,
-pre .atv {
-  color: #ffa0a0;
-}
-/* highlight Identifier guifg=PaleGreen */
-pre .var,
-pre .fun {
-  color: #98fb98;
-}
-/* highlight Statement guifg=Khaki gui=bold */
-pre .kwd,
-pre .tag {
-  color: #f0e68c;
-  font-weight: bold;
-}
-/* highlight PreProc guifg=IndianRed */
-pre .dec {
-  color: #cd5c5c;
-}
-/* highlight Type guifg=DarkKhaki gui=bold */
-pre .typ {
-  color: #bdb76b;
-  /* font-weight: bold; */
-}
-pre .atn {
-  color: #bdb76b;
-  font-weight: bold;
-}
-/* highlight Special guifg=NavajoWhite */
-pre .pun {
-  color: #fff;
-}
-pre .opn,
-pre .clo {
-  color: #ffdead;
-}
-/* highlight Underlined gui=underline guifg=#80a0ff */
-.prettyprint a {
-  color: #80a0ff;
-  text-decoration: underline;
-}
-/* highlight LineNr guifg=Yellow */
-ol.linenums {
-  color: #ff0;
+@media screen {
+  /* highlight Normal guifg=White guibg=Grey20 */
+  .prettyprint {
+    color: #fff;
+    background-color: #333;
+  }
+  .prettyprint .pln,
+  .prettyprint .nocode {
+    color: #fff;
+  }
+  /* highlight Comment guifg=SkyBlue */
+  .prettyprint .com {
+    color: #87ceeb;
+  }
+  /* highlight Constant guifg=#ffa0a0 */
+  .prettyprint .str,
+  .prettyprint .lit,
+  .prettyprint .atv {
+    color: #ffa0a0;
+  }
+  /* highlight Identifier guifg=PaleGreen */
+  .prettyprint .var,
+  .prettyprint .fun {
+    color: #98fb98;
+  }
+  /* highlight Statement guifg=Khaki gui=bold */
+  .prettyprint .kwd,
+  .prettyprint .tag {
+    color: #f0e68c;
+    font-weight: bold;
+  }
+  /* highlight PreProc guifg=IndianRed */
+  .prettyprint .dec {
+    color: #cd5c5c;
+  }
+  /* highlight Type guifg=DarkKhaki gui=bold */
+  .prettyprint .typ {
+    color: #bdb76b;
+    /* font-weight: bold; */
+  }
+  .prettyprint .atn {
+    color: #bdb76b;
+    font-weight: bold;
+  }
+  /* highlight Special guifg=NavajoWhite */
+  .prettyprint .pun {
+    color: #fff;
+  }
+  .prettyprint .opn,
+  .prettyprint .clo {
+    color: #ffdead;
+  }
+  /* highlight Underlined gui=underline guifg=#80a0ff */
+  .prettyprint a {
+    color: #80a0ff;
+    text-decoration: underline;
+  }
+  /* highlight LineNr guifg=Yellow */
+  .prettyprint ol.linenums {
+    color: #ff0;
+  }
 }

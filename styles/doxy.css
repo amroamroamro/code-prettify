@@ -4,123 +4,124 @@
  * @kind dark
  */
 
-/* forground, background: white text on black */
-pre.prettyprint, code.prettyprint {
-  font-weight: bold;
-  background-color: #0f0f0f;
-  color: #f0f0f0;
-}
-/* plaintext: white */
-pre .pln, code .pln,
-pre .nocode, code .nocode {
-  color: #f0f0f0;
-}
-/* punctuation: lemon chiffon4 */
-pre .pun, code .pun,
-pre .opn, code .opn,
-pre .clo, code .clo {
-  color: #8b8970;
-}
-/* string: eggyolk gold */
-pre .str, code .str {
-  color: #fec243;
-}
-/* keyword: light slate blue */
-pre .kwd, code .kwd {
-  color: #8470ff;
-}
-/* comment: green */
-pre .com, code .com {
-  color: #32cd32;
-  font-style: italic;
-}
-/* type: turq green */
-pre .typ, code .typ {
-  color: #6ecbcc;
-}
-/* literal: cherry red */
-pre .lit, code .lit {
-  color: #d06;
-}
-/* variable, function: light purply */
-pre .var, code .var,
-pre .fun, code .fun {
-  color: #d0a0d0;
-}
+@media screen {
+  /* forground, background: white text on black */
+  .prettyprint {
+    font-weight: bold;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+  }
+  /* plaintext: white */
+  .prettyprint .pln,
+  .prettyprint .nocode {
+    color: #f0f0f0;
+  }
+  /* punctuation: lemon chiffon4 */
+  .prettyprint .pun,
+  .prettyprint .opn,
+  .prettyprint .clo {
+    color: #8b8970;
+  }
+  /* string: eggyolk gold */
+  .prettyprint .str {
+    color: #fec243;
+  }
+  /* keyword: light slate blue */
+  .prettyprint .kwd {
+    color: #8470ff;
+  }
+  /* comment: green */
+  .prettyprint .com {
+    color: #32cd32;
+    font-style: italic;
+  }
+  /* type: turq green */
+  .prettyprint .typ {
+    color: #6ecbcc;
+  }
+  /* literal: cherry red */
+  .prettyprint .lit {
+    color: #d06;
+  }
+  /* variable, function: light purply */
+  .prettyprint .var,
+  .prettyprint .fun {
+    color: #d0a0d0;
+  }
 /* html/xml tag: bluey */
-pre .tag, code .tag {
-  color: #9c9cff;
-}
-/* html/xml attribute name: lt turquoise */
-pre .atn, code .atn {
-  color: #46eeee;
-  font-weight: normal;
-}
-/* html/xml attribute value: rosy brown2 */
-pre .atv, code .atv {
-  color: #eeb4b4;
-}
-/* html/xml declaration: blue */
-pre .dec, code .dec {
-  color: #3387cc;
-}
-/* hyperlinks */
-pre.prettyprint a, code.prettyprint a {
-  text-decoration: none;
+  .prettyprint .tag {
+    color: #9c9cff;
+  }
+  /* html/xml attribute name: lt turquoise */
+  .prettyprint .atn {
+    color: #46eeee;
+    font-weight: normal;
+  }
+  /* html/xml attribute value: rosy brown2 */
+  .prettyprint .atv {
+    color: #eeb4b4;
+  }
+  /* html/xml declaration: blue */
+  .prettyprint .dec {
+    color: #3387cc;
+  }
+  /* hyperlinks */
+  .prettyprint a {
+    text-decoration: none;
+  }
 }
 
 /* line numbers: same color as punctuation */
-ol.linenums {
+.prettyprint ol.linenums {
   color: #8b8970;
 }
 
 @media print, projection {
-  pre.prettyprint, code.prettyprint {
+  .prettyprint {
     background-color: #fff;
     color: #000;
-    font-weight: normal;
   }
-  pre .pln, code .pln,
-  pre .nocode, code .nocode {
+  .prettyprint .pln,
+  .prettyprint .nocode {
     color: #000;
   }
-  pre .pun, code .pun,
-  pre .opn, code .opn,
-  pre .clo, code .clo {
+  .prettyprint .pun,
+  .prettyprint .opn,
+  .prettyprint .clo {
     color: #440;
   }
-  pre .str, code .str,
-  pre .atv, code .atv {
+  .prettyprint .str,
+  .prettyprint .atv {
     color: #088;
   }
-  pre .kwd, code .kwd {
+  .prettyprint .kwd {
     color: #006;
     font-weight: bold;
   }
-  pre .com, code .com {
+  .prettyprint .com {
     color: #0c3;
     font-style: italic;
   }
-  pre .typ, code .typ {
+  .prettyprint .typ {
     color: #404;
     font-weight: bold;
   }
-  pre .lit, code .lit {
+  .prettyprint .lit {
     color: #044;
   }
-  pre .var, code .var,
-  pre .fun, code .fun {
+  .prettyprint .var,
+  .prettyprint .fun {
     color: #606;
     font-weight: bold;
   }
-  pre .dec, code .dec {
+  .prettyprint .dec {
     color: #606;
   }
-  pre .tag, code .tag {
+  .prettyprint .tag {
     color: #b66ff7;
     font-weight: bold;
   }
-  pre .atn, code .atn {
+  .prettyprint .atn {
     color: #c71585;
   }
 }
